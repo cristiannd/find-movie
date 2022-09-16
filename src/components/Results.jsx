@@ -2,7 +2,7 @@ import axios from 'axios'
 import { useEffect, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import Swal from 'sweetalert2'
-import List from './List'
+import List from '../views/Home'
 
 const Results = ({ handleFavoriteMovies, favoriteMovies }) => {
   const [moviesResults, setMoviesResults] = useState([])

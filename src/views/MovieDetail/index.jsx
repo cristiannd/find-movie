@@ -6,7 +6,6 @@ const Detail = () => {
   const [movie, setMovie] = useState(null)
 
   const params = useParams()
-  const token = localStorage.getItem('token')
 
   const endPoint = `https://api.themoviedb.org/3/movie/${params.id}?api_key=0db1c391dcdd8094dc1b8183f8235e18&language=es-ES`
 
@@ -16,10 +15,6 @@ const Detail = () => {
       .then(res => setMovie(res.data))
       .catch(err => console.error(err))
   }, [endPoint])
-
-  if (!token) {
-    return <Navigate to='/' />
-  }
 
   if (!movie) {
     return <h3>Loading...</h3>

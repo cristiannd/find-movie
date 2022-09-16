@@ -1,4 +1,4 @@
-import List from './List'
+import List from '../views/Home'
 
 const Favorites = ({ favoriteMovies, handleFavoriteMovies }) => {
   return (

@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import Favorites from './components/Favorites'
 import Footer from './components/Footer'
 import Header from './components/Header'
-import List from './components/List'
+import Home from './views/Home'
 import Results from './components/Results'
 import Detail from './views/MovieDetail'
 import './App.css'
@@ -49,12 +49,12 @@ function App() {
     <div className='container'>
       <Header />
 
-      {/* <div>
+      <div>
         <Routes>
           <Route
-            path='/list'
+            path='/'
             element={
-              <List
+              <Home
                 handleFavoriteMovies={handleFavoriteMovies}
                 favoriteMovies={favoriteMovies}
               />
@@ -81,7 +81,7 @@ function App() {
           />
         </Routes>
       </div>
-*/}
+
       <Footer favoriteMovies={favoriteMovies} />
     </div>
   )
