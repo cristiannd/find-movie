@@ -6,24 +6,40 @@ footer {
 }
 
 footer nav {
-  padding: 1rem 0;
+  width: 100%;
 }
 
 footer nav ul {
   display: flex;
-  justify-content: center;
-  gap: 1rem;
+  gap: 2px;
 }
 
 footer nav ul li {
-  list-style: none;
-  width: 5rem;
-  background-color: red;
+  width: 50%;
+  height: 4rem;
+  background-color: #fff;
   text-align: center;
+  list-style: none;
 }
 
 footer nav ul li a {
-  color: #fff;
-  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: var(--background-color);
   font-size: 1.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+footer nav ul li a div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer nav ul li a div span {
+  font-size: .75rem;
 }
